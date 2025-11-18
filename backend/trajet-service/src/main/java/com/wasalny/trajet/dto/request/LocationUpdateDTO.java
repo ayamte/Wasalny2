@@ -9,7 +9,7 @@ import java.util.UUID;
 @Data  
 @NoArgsConstructor  
 @AllArgsConstructor  
-public class LocationDTO {  
+public class LocationUpdateDTO {  
     private UUID busId;  
     private Double latitude;  
     private Double longitude;  
