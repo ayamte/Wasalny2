@@ -14,10 +14,12 @@ spring:
       hibernate:  
         dialect: org.hibernate.dialect.PostgreSQLDialect  
   
-jwt:  
-  secret: ${JWT_SECRET:your-secret-key-here}  
-  expiration: 86400000  
-  
+# JWT Configuration
+security:
+  jwt:
+    secret-key: ${JWT_SECRET:yPBDF3goXOTLVXbA4VFPTmOFcXtNT8ouT80zRJV3tecvi/SJCDU8makhpYKWX30a0kW7ANe5OhLC2ToJ3Zbd4Q==}
+    expiration-time: ${JWT_EXPIRATION:3600000}
+
 eureka:  
   client:  
     service-url:  

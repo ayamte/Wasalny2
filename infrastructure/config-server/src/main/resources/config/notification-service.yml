@@ -13,10 +13,10 @@ spring:
     properties:  
       hibernate:  
         dialect: org.hibernate.dialect.PostgreSQLDialect  
-  rabbitmq:  
-    host: localhost  
-    port: 5672  
-    username: ${RABBITMQ_USER:admin}  
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: ${RABBITMQ_USER:admin}
     password: ${RABBITMQ_PASSWORD:admin}  
   
 eureka:
@@ -26,4 +26,4 @@ eureka:
 
 security:
   jwt:
-    secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    secret-key: yPBDF3goXOTLVXbA4VFPTmOFcXtNT8ouT80zRJV3tecvi/SJCDU8makhpYKWX30a0kW7ANe5OhLC2ToJ3Zbd4Q==
